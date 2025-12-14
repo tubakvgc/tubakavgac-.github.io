@@ -2,158 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tuba Kavgacı | SOC Analyst & Digital Forensics Engineer</title>
+  <meta name="description" content="Tuba Kavgacı — SOC Analyst & Digital Forensics Engineer. Incident Response, DFIR, Threat Intelligence. Projects, Writing, About." />
   <style>
-    body {
-      margin: 0;
-      font-family: Segoe UI, sans-serif;
-      background: linear-gradient(180deg, #0a192f, #0f172a);
-      color: #e5e7eb;
-      line-height: 1.6;
+    :root{
+      --bg1:#0a192f; --bg2:#0f172a; --card:#020617;
+      --accent:#64ffda; --text:#e5e7eb; --muted:#94a3b8; --link:#38bdf8;
     }
-    header {
-      padding: 70px 20px;
-      text-align: center;
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; color:var(--text);
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #0b2a4a 0%, transparent 60%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
     }
-    h1 { color: #64ffda; font-size: 2.4em; }
-    h2 { color: #94a3b8; font-weight: 400; }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
+    a{color:var(--link); text-decoration:none}
+    .wrap{max-width:1100px; margin:auto; padding:64px 20px}
+    header.hero{display:grid; gap:18px; text-align:center; padding:80px 20px 40px}
+    header.hero h1{font-size:clamp(2.2rem,4vw,3rem); color:var(--accent); margin:0}
+    header.hero h2{font-weight:500; color:var(--muted); margin:0}
+    header.hero p{max-width:780px; margin:8px auto 0; color:#cbd5f5}
+    .cta{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      background:#0b1220; border:1px solid #1f2937; color:#e5e7eb;
+      padding:12px 18px; border-radius:12px; font-weight:600;
+      box-shadow:0 10px 30px rgba(0,0,0,.25); transition:.2s
     }
-    .card {
-      background: #020617;
-      border-radius: 14px;
-      padding: 25px;
-      margin-bottom: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    .btn.primary{background:#0b3a3a; border-color:#0ea5a5; color:#ecfeff}
+    .btn:hover{transform:translateY(-2px)}
+    .links{display:flex; gap:16px; justify-content:center; margin-top:10px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),var(--card);
+      border:1px solid #0b1220; border-radius:18px; padding:22px; box-shadow:0 20px 40px rgba(0,0,0,.35)
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    .tags span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 5px;
-      font-size: 0.85em;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #64748b;
-    }
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+    .kicker{color:var(--muted); letter-spacing:.08em; text-transform:uppercase; font-size:.75rem}
+    footer{padding:30px 20px; text-align:center; color:#64748b}
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Tuba Kavgacı</h1>
-  <h2>SOC Analyst • Digital Forensics Engineer • Threat Intelligence</h2>
-  <p>
-    Security monitoring, incident response, DFIR, phishing analysis and security automation.
-  </p>
-  <p>
-    <a href="https://github.com/tubakvgc">GitHub</a> ·
-    <a href="https://medium.com/@tbkvgc7.2">Medium</a> ·
-    <a href="https://linkedin.com/in/tubakavgaci">LinkedIn</a>
-  </p>
-</header>
-
-<section>
-  <div class="card">
-    <h3>🧠 About Me</h3>
+  <!-- HERO / LANDING -->
+  <header class="hero">
+    <h1>Tuba Kavgacı</h1>
+    <h2>SOC Analyst · Digital Forensics Engineer · Threat Intelligence</h2>
     <p>
-      I am a SOC Analyst with hands-on experience in real-time monitoring, incident response,
-      and threat investigation. My background in Digital Forensics allows me to analyze security
-      incidents deeply, while my projects focus on automation, phishing detection and threat intelligence.
+      Security monitoring, incident response and DFIR. I build security automation tools and
+      publish technical cybersecurity articles.
     </p>
-  </div>
 
-  <div class="card">
-    <h3>🛠 Core Skills</h3>
-    <div class="tags">
-      <span>IBM QRadar</span><span>SIEM</span><span>SOAR</span>
-      <span>Incident Response</span><span>Email Security</span>
-      <span>Digital Forensics</span><span>Threat Intelligence</span>
-      <span>Python</span><span>Malware Analysis</span>
+    <!-- Primary navigation (what goes where) -->
+    <div class="cta">
+      <a class="btn primary" href="projects.html">🧩 Projects</a>
+      <a class="btn" href="writing.html">✍️ Writing</a>
+      <a class="btn" href="about.html">👩‍💼 About Me</a>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>🚨 Featured Security Projects</h3>
-    <ul>
-      <li>
-        <b>Phishing Monitoring Pipeline</b><br/>
-        Automated detection of phishing domains, URLs and IPs with IOC enrichment and MISP integration.<br/>
-        <a href="https://github.com/tubakvgc/Phishing-Monitoring-Pipeline">View on GitHub</a>
-      </li><br/>
-      <li>
-        <b>PhishTrapX</b><br/>
-        AI-assisted email and phishing analysis tool focused on SOC workflows.<br/>
-        <a href="https://github.com/tubakvgc/PhishTrapX">View on GitHub</a>
-      </li><br/>
-      <li>
-        <b>Nessus Vulnerability Tracker</b><br/>
-        Vulnerability tracking and analysis automation for security teams.<br/>
-        <a href="https://github.com/tubakvgc/nessus-vuln-tracker">View on GitHub</a>
-      </li>
-    </ul>
-  </div>
+    <!-- External links -->
+    <div class="links">
+      <a href="https://github.com/tubakvgc" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://medium.com/@tbkvgc7.2" target="_blank" rel="noreferrer">Medium</a>
+      <a href="https://linkedin.com/in/tubakavgaci" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </header>
 
-  <div class="card">
-    <h3>📚 Learning & Technical Foundations</h3>
-    <p>
-      These projects represent my technical foundation and learning journey.
-    </p>
-    <ul>
-      <li>C Projects, JavaCamp, Python Projects</li>
-      <li>Web Scraping & Automation</li>
-      <li>Matlab Signal Processing & CNN Experiments</li>
-      <li>Game Development & System Fundamentals</li>
-    </ul>
-  </div>
+  <!-- QUICK OVERVIEW (no details) -->
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <div class="kicker">What I Do</div>
+        <p>
+          SOC operations, SIEM monitoring, incident response, phishing analysis and
+          threat intelligence with a DFIR background.
+        </p>
+      </div>
+      <div class="card">
+        <div class="kicker">What You’ll Find</div>
+        <p>
+          Curated security projects, automation tools, and technical writing
+          showcasing real-world SOC experience.
+        </p>
+      </div>
+      <div class="card">
+        <div class="kicker">Where to Go</div>
+        <p>
+          Start with <b>Projects</b> for hands-on work, <b>Writing</b> for knowledge sharing,
+          or <b>About</b> for my background and experience.
+        </p>
+      </div>
+    </section>
+  </main>
 
-  <div class="card">
-    <h3>✍️ Technical Writing</h3>
-    <p>
-      I regularly publish cybersecurity and digital forensics articles on Medium.
-    </p>
-    <ul>
-      <li>SSRF & Web Vulnerabilities</li>
-      <li>Email & Phishing Analysis</li>
-      <li>OAuth Security</li>
-      <li>LOLBAS Techniques</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>🏢 Experience</h3>
-    <p>
-      <b>Cyber Security Analyst – İŞNET</b><br/>
-      SOC monitoring, SIEM correlation, incident response, threat intelligence and reporting.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>🎓 Certifications</h3>
-    <ul>
-      <li>AWS Cloud Practitioner</li>
-      <li>MCRTA, C3SA, BTJA</li>
-      <li>IBM QRadar SIEM</li>
-      <li>CEH</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  © 2025 Tuba Kavgacı · Security & DFIR Portfolio
-</footer>
+  <footer>
+    © 2025 Tuba Kavgacı · SOC & DFIR Portfolio
+  </footer>
 
 </body>
 </html>
