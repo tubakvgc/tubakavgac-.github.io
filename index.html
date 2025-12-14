@@ -1,116 +1,159 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bora İnal | Cloud & Security Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tuba Kavgacı | SOC Analyst & Digital Forensics Engineer</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(180deg, #0a192f 0%, #12263f 100%);
-      color: #e0e0e0;
+      font-family: Segoe UI, sans-serif;
+      background: linear-gradient(180deg, #0a192f, #0f172a);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      padding: 70px 20px;
       text-align: center;
     }
-
-    header {
-      padding: 60px 20px 30px 20px;
+    h1 { color: #64ffda; font-size: 2.4em; }
+    h2 { color: #94a3b8; font-weight: 400; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
     }
-
-    h1 {
-      color: #64ffda;
-      font-size: 2.2em;
-      margin-bottom: 10px;
+    .card {
+      background: #020617;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
     }
-
-    h2 {
-      color: #8892b0;
-      font-weight: normal;
-      font-size: 1.1em;
-    }
-
-    .buttons {
-      margin: 40px auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      max-width: 400px;
-    }
-
     a {
+      color: #38bdf8;
       text-decoration: none;
-      color: #fff;
-      background-color: #1e3a8a;
-      padding: 14px 25px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 350px;
-      transition: all 0.2s ease-in-out;
-      font-weight: 500;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     }
-
-    a:hover {
-      background-color: #2563eb;
-      transform: translateY(-3px);
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      color: #64748b;
-      font-size: 0.9em;
-    }
-
-    img.profile {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #64ffda;
-      margin-bottom: 20px;
-    }
-
-    .socials {
-      margin-top: 20px;
-    }
-
-    .socials a {
+    .tags span {
       display: inline-block;
-      background: none;
-      margin: 0 10px;
-      font-size: 24px;
-      color: #64ffda;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.85em;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/00000000?v=4" class="profile" alt="Bora İnal">
-    <h1>Tuba Kavgacı</h1>
-    <h2>SOC Analyst | Cloud Security | Threat Intelligence | Founder @RAVION</h2>
 
-    <div class="socials">
-      <a href="https://linkedin.com/in/borainal">🔗</a>
-      <a href="https://github.com/borainal">💻</a>
-      <a href="mailto:bora.inal@example.com">✉️</a>
-    </div>
-  </header>
+<header>
+  <h1>Tuba Kavgacı</h1>
+  <h2>SOC Analyst • Digital Forensics Engineer • Threat Intelligence</h2>
+  <p>
+    Security monitoring, incident response, DFIR, phishing analysis and security automation.
+  </p>
+  <p>
+    <a href="https://github.com/tubakvgc">GitHub</a> ·
+    <a href="https://medium.com/@tbkvgc7.2">Medium</a> ·
+    <a href="https://linkedin.com/in/tubakavgaci">LinkedIn</a>
+  </p>
+</header>
 
-  <div class="buttons">
-    <a href="https://borainal.github.io/blog">🧠 Blog Yazılarım</a>
-    <a href="https://github.com/borainal/PhishTrapX">🎯 PhishTrapX (AI Email Analyzer)</a>
-    <a href="https://github.com/borainal/nessus-ai-analyzer">⚙️ Nessus AI Analyzer</a>
-    <a href="https://github.com/borainal/aws-pentest-101">☁️ AWS Pentest 101</a>
-    <a href="https://www.credly.com/users/borainal">🏆 Sertifikalarım</a>
-    <a href="https://www.youtube.com/@borainal">📺 YouTube Sunumlarım</a>
-    <a href="https://linkedin.com/in/borainal">💬 LinkedIn Profilim</a>
-    <a href="mailto:bora.inal@example.com">📩 Bana Ulaşın</a>
+<section>
+  <div class="card">
+    <h3>🧠 About Me</h3>
+    <p>
+      I am a SOC Analyst with hands-on experience in real-time monitoring, incident response,
+      and threat investigation. My background in Digital Forensics allows me to analyze security
+      incidents deeply, while my projects focus on automation, phishing detection and threat intelligence.
+    </p>
   </div>
 
-  <footer>
-    <p>© 2025 Tuba Kavgacı | RAVION Security Research</p>
-  </footer>
+  <div class="card">
+    <h3>🛠 Core Skills</h3>
+    <div class="tags">
+      <span>IBM QRadar</span><span>SIEM</span><span>SOAR</span>
+      <span>Incident Response</span><span>Email Security</span>
+      <span>Digital Forensics</span><span>Threat Intelligence</span>
+      <span>Python</span><span>Malware Analysis</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🚨 Featured Security Projects</h3>
+    <ul>
+      <li>
+        <b>Phishing Monitoring Pipeline</b><br/>
+        Automated detection of phishing domains, URLs and IPs with IOC enrichment and MISP integration.<br/>
+        <a href="https://github.com/tubakvgc/Phishing-Monitoring-Pipeline">View on GitHub</a>
+      </li><br/>
+      <li>
+        <b>PhishTrapX</b><br/>
+        AI-assisted email and phishing analysis tool focused on SOC workflows.<br/>
+        <a href="https://github.com/tubakvgc/PhishTrapX">View on GitHub</a>
+      </li><br/>
+      <li>
+        <b>Nessus Vulnerability Tracker</b><br/>
+        Vulnerability tracking and analysis automation for security teams.<br/>
+        <a href="https://github.com/tubakvgc/nessus-vuln-tracker">View on GitHub</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>📚 Learning & Technical Foundations</h3>
+    <p>
+      These projects represent my technical foundation and learning journey.
+    </p>
+    <ul>
+      <li>C Projects, JavaCamp, Python Projects</li>
+      <li>Web Scraping & Automation</li>
+      <li>Matlab Signal Processing & CNN Experiments</li>
+      <li>Game Development & System Fundamentals</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>✍️ Technical Writing</h3>
+    <p>
+      I regularly publish cybersecurity and digital forensics articles on Medium.
+    </p>
+    <ul>
+      <li>SSRF & Web Vulnerabilities</li>
+      <li>Email & Phishing Analysis</li>
+      <li>OAuth Security</li>
+      <li>LOLBAS Techniques</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🏢 Experience</h3>
+    <p>
+      <b>Cyber Security Analyst – İŞNET</b><br/>
+      SOC monitoring, SIEM correlation, incident response, threat intelligence and reporting.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🎓 Certifications</h3>
+    <ul>
+      <li>AWS Cloud Practitioner</li>
+      <li>MCRTA, C3SA, BTJA</li>
+      <li>IBM QRadar SIEM</li>
+      <li>CEH</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2025 Tuba Kavgacı · Security & DFIR Portfolio
+</footer>
+
 </body>
 </html>
