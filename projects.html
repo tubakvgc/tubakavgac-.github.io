@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Tuba Kavgacı</title>
+  <meta name="description" content="Security, SOC, DFIR and automation projects by Tuba Kavgacı." />
+  <style>
+    :root{
+      --bg1:#0a192f; --bg2:#0f172a; --card:#020617;
+      --accent:#64ffda; --text:#e5e7eb; --muted:#94a3b8; --link:#38bdf8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; color:var(--text);
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif;
+      background: linear-gradient(180deg,var(--bg1),var(--bg2));
+    }
+    a{color:var(--link); text-decoration:none}
+    header{padding:40px 20px; text-align:center}
+    header h1{color:var(--accent); margin:0}
+    header p{color:var(--muted)}
+    .wrap{max-width:1100px; margin:auto; padding:20px}
+    .section{margin-top:40px}
+    .section h2{color:#cbd5f5}
+    .card{
+      background:var(--card); border:1px solid #0b1220; border-radius:16px;
+      padding:20px; margin-top:16px; box-shadow:0 20px 40px rgba(0,0,0,.35)
+    }
+    .card h3{margin-top:0}
+    .tags span{
+      display:inline-block; background:#0b1220; padding:6px 12px; border-radius:20px;
+      font-size:.8rem; margin:4px 4px 0 0
+    }
+    footer{padding:30px 20px; text-align:center; color:#64748b}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Projects</h1>
+  <p>Hands-on security projects covering SOC operations, DFIR and automation.</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <h2>🚨 Security Automation & SOC Tools</h2>
+
+    <div class="card">
+      <h3>Phishing Monitoring Pipeline</h3>
+      <p>
+        Automated SOC-focused pipeline that detects phishing domains, URLs and IP addresses,
+        enriches them with threat intelligence and forwards structured IOCs to MISP.
+      </p>
+      <div class="tags"><span>Python</span><span>CTI</span><span>MISP</span><span>Email Security</span></div>
+      <p><a href="https://github.com/tubakvgc/Phishing-Monitoring-Pipeline" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="card">
+      <h3>PhishTrapX</h3>
+      <p>
+        AI-assisted phishing and email analysis tool designed to support SOC workflows and
+        incident investigation processes.
+      </p>
+      <div class="tags"><span>Python</span><span>Phishing</span><span>SOC</span></div>
+      <p><a href="https://github.com/tubakvgc/PhishTrapX" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Nessus Vulnerability Tracker</h3>
+      <p>
+        Vulnerability tracking and analysis automation tool that helps security teams
+        monitor, categorize and report discovered vulnerabilities.
+      </p>
+      <div class="tags"><span>Python</span><span>Vulnerability Management</span></div>
+      <p><a href="https://github.com/tubakvgc/nessus-vuln-tracker" target="_blank">View on GitHub</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔍 DFIR & Incident Response</h2>
+
+    <div class="card">
+      <h3>Incident Response</h3>
+      <p>
+        Incident response practices, investigations and analysis performed during SOC
+        and DFIR training and professional experience.
+      </p>
+      <div class="tags"><span>DFIR</span><span>Incident Response</span><span>SIEM</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Malware Analysis</h3>
+      <p>
+        Practical malware analysis exercises including static and dynamic analysis of
+        real-world malware samples.
+      </p>
+      <div class="tags"><span>Malware</span><span>Reverse Engineering</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>📚 Foundations & Learning Projects</h2>
+
+    <div class="card">
+      <h3>Programming & System Foundations</h3>
+      <p>
+        Early-stage and foundational projects demonstrating progression in programming,
+        system understanding and problem-solving skills.
+      </p>
+      <ul>
+        <li>C Projects</li>
+        <li>Python Projects</li>
+        <li>JavaCamp</li>
+        <li>Web Scraping & Automation</li>
+        <li>Matlab Signal Processing & CNN Experiments</li>
+        <li>Game Development & System Fundamentals</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Tuba Kavgacı · Projects
+</footer>
+
+</body>
+</html>
