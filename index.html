@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tuba Kavgacı — Cyber Security Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0a0c10;
@@ -17,8 +17,8 @@
       --accent3: #ff4d6d;
       --text: #e8eaf0;
       --muted: #6b7280;
-      --font-display: 'Syne', sans-serif;
-      --font-mono: 'Space Mono', monospace;
+      --font-display: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'Plus Jakarta Sans', sans-serif;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,8 +29,8 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--font-mono);
-      font-size: 14px;
-      line-height: 1.7;
+      font-size: 15px;
+      line-height: 1.75;
       overflow-x: hidden;
     }
 
@@ -270,10 +270,12 @@
     }
 
     .section-title {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: -1px;
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text);
     }
 
     .section-line {
@@ -538,7 +540,7 @@
     /* CVE SECTION */
     .cve-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 0.6rem;
     }
 
@@ -546,16 +548,18 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-left: 2px solid var(--accent3);
-      padding: 0.5rem 0.75rem;
+      padding: 0.6rem 0.75rem;
       font-size: 0.72rem;
       color: var(--accent3);
-      font-family: var(--font-mono);
       transition: all 0.2s;
+      display: block;
+      text-decoration: none;
     }
 
     .cve-badge:hover {
-      background: rgba(255,77,109,0.05);
+      background: rgba(255,77,109,0.07);
       border-left-width: 4px;
+      border-color: var(--accent3);
     }
 
     .cve-desc {
@@ -563,6 +567,77 @@
       font-size: 0.65rem;
       display: block;
       margin-top: 0.2rem;
+    }
+
+    .cve-links {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .cve-link-btn {
+      font-size: 0.6rem;
+      color: var(--muted);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 0.1rem 0.45rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .cve-link-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ACTIVITY FEED */
+    .feed-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .feed-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--accent2);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feed-type {
+      font-size: 0.6rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent2);
+      background: rgba(0,195,255,0.08);
+      border: 1px solid rgba(0,195,255,0.2);
+      padding: 0.2rem 0.5rem;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+    }
+
+    .feed-type.type-cve   { color: var(--accent3); background: rgba(255,77,109,0.08); border-color: rgba(255,77,109,0.2); }
+    .feed-type.type-cert  { color: var(--accent);  background: rgba(0,255,157,0.08);  border-color: rgba(0,255,157,0.2); }
+    .feed-type.type-article { color: var(--accent2); }
+
+    .feed-body { flex: 1; }
+
+    .feed-title {
+      font-size: 0.85rem;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .feed-title a { color: inherit; text-decoration: none; }
+    .feed-title a:hover { color: var(--accent2); }
+
+    .feed-date {
+      font-size: 0.65rem;
+      color: var(--muted);
     }
 
     /* CONTACT */
@@ -648,6 +723,7 @@
     <li><a href="#certs">certs</a></li>
     <li><a href="#writing">writing</a></li>
     <li><a href="#cve">cve</a></li>
+    <li><a href="#activity">activity</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
 </nav>
@@ -894,33 +970,124 @@
     20+ security vulnerabilities discovered and reported with published CVEs.
   </p>
   <div class="cve-grid">
-    <div class="cve-badge">CVE-2024-22726<span class="cve-desc">Wishlist App — XSS</span></div>
-    <div class="cve-badge">CVE-2024-24038<span class="cve-desc">Student File Mgmt — Auth Bypass</span></div>
-    <div class="cve-badge">CVE-2024-24039<span class="cve-desc">Student File Mgmt — XSS 1</span></div>
-    <div class="cve-badge">CVE-2024-24040<span class="cve-desc">Student File Mgmt — XSS 2</span></div>
-    <div class="cve-badge">CVE-2024-24041<span class="cve-desc">Travel Journal — XSS</span></div>
-    <div class="cve-badge">CVE-2024-25302<span class="cve-desc">Event Attendance — SQL Injection</span></div>
-    <div class="cve-badge">CVE-2024-25304<span class="cve-desc">School Mgmt System #1</span></div>
-    <div class="cve-badge">CVE-2024-25305<span class="cve-desc">School Mgmt System #2</span></div>
-    <div class="cve-badge">CVE-2024-25306<span class="cve-desc">School Mgmt System #3</span></div>
-    <div class="cve-badge">CVE-2024-25308<span class="cve-desc">School Mgmt System #4</span></div>
-    <div class="cve-badge">CVE-2024-25309<span class="cve-desc">School Mgmt System #5</span></div>
-    <div class="cve-badge">CVE-2024-25310<span class="cve-desc">School Mgmt System #6</span></div>
-    <div class="cve-badge">CVE-2024-25312<span class="cve-desc">School Mgmt System #7</span></div>
-    <div class="cve-badge">CVE-2024-25313<span class="cve-desc">School Mgmt System #8</span></div>
-    <div class="cve-badge">CVE-2024-25314<span class="cve-desc">Hotel Mgmt System #1</span></div>
-    <div class="cve-badge">CVE-2024-25315<span class="cve-desc">Hotel Mgmt System #2</span></div>
-    <div class="cve-badge">CVE-2024-25316<span class="cve-desc">Hotel Mgmt System #3</span></div>
-    <div class="cve-badge">CVE-2024-25317<span class="cve-desc">Hotel Mgmt System #4</span></div>
-    <div class="cve-badge">CVE-2024-25318<span class="cve-desc">Hotel Mgmt System #5</span></div>
-    <div class="cve-badge" style="border-left-color:var(--muted); color:var(--muted);">+ more →</div>
+    <div class="cve-badge">CVE-2024-22726
+      <span class="cve-desc">Wishlist App — XSS</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-22726" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-24038
+      <span class="cve-desc">Student File Mgmt — Auth Bypass</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-24038" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-24039
+      <span class="cve-desc">Student File Mgmt — XSS 1</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-24039" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-24040
+      <span class="cve-desc">Student File Mgmt — XSS 2</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-24040" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-24041
+      <span class="cve-desc">Travel Journal — XSS</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-24041" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-25302
+      <span class="cve-desc">Event Attendance — SQL Injection</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-25302" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-25304 → 25313
+      <span class="cve-desc">Simple School Mgmt System — 8 CVE</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-25304" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+    <div class="cve-badge">CVE-2024-25314 → 25318
+      <span class="cve-desc">Hotel Mgmt System — 5 CVE</span>
+      <div class="cve-links">
+        <a class="cve-link-btn" href="https://github.com/tubakvgc" target="_blank">GitHub ↗</a>
+        <a class="cve-link-btn" href="https://nvd.nist.gov/vuln/detail/CVE-2024-25314" target="_blank">NVD ↗</a>
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem; font-size:0.75rem; color:var(--muted);">
+    ✦ Yeni CVE eklemek için yukarıdaki <code style="color:var(--accent)">cve-badge</code> formatını kopyala.
+    GitHub repo linkini kendi repo adresinle güncellemeyi unutma.
+  </p>
+</section>
+
+<!-- ACTIVITY FEED -->
+<section id="activity">
+  <div class="section-header">
+    <span class="section-num">// 06</span>
+    <h2 class="section-title">Activity</h2>
+    <div class="section-line"></div>
+  </div>
+  <p style="font-size:0.78rem; color:var(--muted); margin-bottom:1.5rem;">
+    Son haberler — LinkedIn, Medium veya GitHub'da paylaşmak için hazır bir akış.
+    <br><span style="color:var(--accent); font-size:0.7rem;">✦ Yeni bir şey eklemek için aşağıya feed-item bloğu ekle.</span>
+  </p>
+  <div class="feed-list">
+    <!-- YENİ AKTİVİTE EKLEMEK İÇİN: aşağıdaki feed-item formatını kopyala ve en üste yapıştır -->
+    <div class="feed-item">
+      <span class="feed-type type-cert">Cert</span>
+      <div class="feed-body">
+        <div class="feed-title">AWS Cloud Quest: Cloud Practitioner sertifikası alındı</div>
+        <div class="feed-date">2024</div>
+      </div>
+    </div>
+    <div class="feed-item">
+      <span class="feed-type type-cve">CVE</span>
+      <div class="feed-body">
+        <div class="feed-title"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-25302" target="_blank">CVE-2024-25302 yayınlandı — Event Student Attendance System SQL Injection ↗</a></div>
+        <div class="feed-date">2024</div>
+      </div>
+    </div>
+    <div class="feed-item">
+      <span class="feed-type type-cve">CVE</span>
+      <div class="feed-body">
+        <div class="feed-title"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-22726" target="_blank">CVE-2024-22726 yayınlandı — Wishlist App XSS ↗</a></div>
+        <div class="feed-date">2024</div>
+      </div>
+    </div>
+    <div class="feed-item">
+      <span class="feed-type type-cert">Cert</span>
+      <div class="feed-body">
+        <div class="feed-title">Web Application Penetration Tester (eWPT) — INE Security</div>
+        <div class="feed-date">2024</div>
+      </div>
+    </div>
+    <div class="feed-item">
+      <span class="feed-type type-article">Article</span>
+      <div class="feed-body">
+        <div class="feed-title"><a href="https://medium.com/@tbkvgc7.2" target="_blank">Medium'da yeni yazılar yayınlandı ↗</a></div>
+        <div class="feed-date">Medium — @tbkvgc7.2</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-header">
-    <span class="section-num">// 06</span>
+    <span class="section-num">// 07</span>
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>
   </div>
