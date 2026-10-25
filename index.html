@@ -210,6 +210,17 @@
     .experience-grid > .resume-card:first-child{grid-column:1 / -1}
     .experience-grid > .resume-card:first-child p:last-child{max-width:850px}
     @media(max-width:590px){.experience-grid > .resume-card:first-child{grid-column:auto}}
+
+    /* Career timeline: explicit groups for professional work, internships and education */
+    .resume-subhead{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:17px}
+    .resume-subhead-spaced{margin-top:36px}
+    .resume-subhead h3{font:800 17px/1.4 "Manrope",sans-serif;letter-spacing:-.035em;margin:0}
+    .resume-subhead span{font-size:12px;color:var(--muted);text-align:right}
+    .career-grid{grid-template-columns:1fr}
+    .internships-grid,.education-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .education-grid > .resume-card:first-child,.internships-grid > .resume-card:first-child{grid-column:auto}
+    @media(max-width:820px){.internships-grid,.education-grid{grid-template-columns:1fr}.resume-subhead{flex-wrap:wrap;gap:5px}.resume-subhead span{text-align:left}}
+    @media print{.resume-subhead-spaced{margin-top:17px}.resume-subhead{margin-bottom:7px}.internships-grid,.education-grid{grid-template-columns:1fr 1fr}.resume-subhead h3{font-size:13pt}}
   </style>
   <script src="i18n.js" defer></script>
   <script type="application/ld+json">
@@ -290,15 +301,43 @@
     <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="wrap">
         <div class="section-head"><div><div class="eyebrow">02 / Background</div><h2 id="experience-title">Experience & education.</h2></div><p class="section-note">A foundation in digital forensics, applied through professional security operations and continuous research.</p></div>
-        <div class="experience-grid">
+        <div class="resume-subhead">
+          <h3>Professional experience</h3>
+          <span>Security operations & earlier development experience</span>
+        </div>
+        <div class="experience-grid career-grid">
           <article class="resume-card">
-            <div class="resume-top"><span class="resume-kind">Professional experience</span><span class="resume-date">Current</span></div>
+            <div class="resume-top"><span class="resume-kind">Cybersecurity · Current role</span><span class="resume-date">Current</span></div>
             <h3>Security Management Specialist</h3>
             <p class="resume-org">İşNet · Türkiye</p>
             <p>Working in cybersecurity with a focus on security operations and threat intelligence. My public work reflects interests in threat hunting, technical research, security analysis, and practical defensive workflows.</p>
           </article>
+        </div>
+        <div class="resume-subhead resume-subhead-spaced">
+          <h3>Earlier experience</h3>
+          <span>Software development internships</span>
+        </div>
+        <div class="experience-grid internships-grid">
           <article class="resume-card">
-            <div class="resume-top"><span class="resume-kind">Education</span><span class="resume-date">2020 — 2024</span></div>
+            <div class="resume-top"><span class="resume-kind">Software engineering internship</span><span class="resume-date">Dec 2018 — Aug 2019</span></div>
+            <h3>Software Engineer Intern</h3>
+            <p class="resume-org">Siirt University · Siirt, Türkiye</p>
+            <p>Contributed to Java and JavaScript development, image-processing and embedded-systems projects, including the Cezeri Lab website and an Arduino-based smart frame.</p>
+          </article>
+          <article class="resume-card">
+            <div class="resume-top"><span class="resume-kind">Software development internship</span><span class="resume-date">Sep — Oct 2018</span></div>
+            <h3>Java Developer Intern</h3>
+            <p class="resume-org">Eria Teknoloji · Kayseri, Türkiye</p>
+            <p>Researched and developed Java-based dynamic web applications, developing practical skills in problem analysis, teamwork and software development workflows.</p>
+          </article>
+        </div>
+        <div class="resume-subhead resume-subhead-spaced">
+          <h3>Education</h3>
+          <span>Technical foundation & ongoing management studies</span>
+        </div>
+        <div class="experience-grid education-grid">
+          <article class="resume-card">
+            <div class="resume-top"><span class="resume-kind">Degree · Graduated</span><span class="resume-date">2020 — 2024</span></div>
             <h3>Digital Forensics Engineering</h3>
             <p class="resume-org">Fırat University · Bachelor's degree</p>
             <p>Engineering education focused on investigating digital evidence and building a technical foundation for cyber defense, incident response, and security research.</p>
