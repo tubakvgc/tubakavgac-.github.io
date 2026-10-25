@@ -7,7 +7,7 @@ A professional, responsive portfolio and résumé website showcasing Tuba Kavgac
 ## Sections
 
 - Introduction and professional profile
-- Professional cybersecurity experience, earlier internships at GAIS Cyber Security and DSET, and education (Digital Forensics Engineering graduate; Business Management at Atatürk University, currently in progress)
+- Professional cybersecurity experience, Offensive Security internship at GAIS Cyber Security (Apr–Jul 2023) and Digital Forensics internship at Doğanay Siber Emniyet Teknolojileri / DSET (Sep 2022), and education (Digital Forensics Engineering graduate; Business Management at Atatürk University, currently in progress)
 - Selected public projects
 - Vulnerability research and CVE proof-of-concepts
 - Publications and technical writing
@@ -35,6 +35,10 @@ The site URL is expected to be:
 https://tubakvgc.github.io/tubakavgac-.github.io/
 
 > Because this repository is not named `tubakvgc.github.io`, it is deployed as a **project site** under a URL path, not at the GitHub username root.
+
+## Internship details
+
+The internship roles, dates, locations, and focus areas on the site are based on the owner's LinkedIn experience screenshot. The technical product name is normalized to **Cellebrite UFED** for clarity.
 
 ## Updating content
 
