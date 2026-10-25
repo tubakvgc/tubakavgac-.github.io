@@ -205,6 +205,11 @@
       .nav.open{display:flex}.nav a{padding:13px 8px;font-size:14px}.nav .nav-contact{margin-top:7px;text-align:center}
     }
     @media(max-width:380px){.header-right{gap:6px}.menu-button{font-size:12px;padding:8px}.language-switch button{min-width:32px;height:30px}}
+
+    /* Full-width professional role followed by two education cards */
+    .experience-grid > .resume-card:first-child{grid-column:1 / -1}
+    .experience-grid > .resume-card:first-child p:last-child{max-width:850px}
+    @media(max-width:590px){.experience-grid > .resume-card:first-child{grid-column:auto}}
   </style>
   <script src="i18n.js" defer></script>
   <script type="application/ld+json">
@@ -297,6 +302,12 @@
             <h3>Digital Forensics Engineering</h3>
             <p class="resume-org">Fırat University · Bachelor's degree</p>
             <p>Engineering education focused on investigating digital evidence and building a technical foundation for cyber defense, incident response, and security research.</p>
+          </article>
+          <article class="resume-card">
+            <div class="resume-top"><span class="resume-kind">Education · In progress</span><span class="resume-date">2026 — Present</span></div>
+            <h3>Business Management</h3>
+            <p class="resume-org">Atatürk University · Ongoing studies</p>
+            <p>Currently studying Business Management to expand my perspective on organizational processes, decision-making, and management alongside my cybersecurity background.</p>
           </article>
         </div>
         <div class="skills-line">
