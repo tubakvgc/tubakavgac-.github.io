@@ -18,6 +18,8 @@ A professional, responsive portfolio and résumé website showcasing Tuba Kavgac
 
 - Clean dark-navy visual identity with accessible contrast
 - Responsive layout and mobile navigation
+- Turkish/English language switcher (TR / EN), with automatic browser-language detection and saved preference
+- Refined hero headline: *Investigating threats. Strengthening defenses.*
 - No JavaScript frameworks or build tools required
 - SEO metadata, Open Graph tags, and Person structured data
 - Reduced-motion and print styles for **Save as PDF**
@@ -36,7 +38,7 @@ https://tubakvgc.github.io/tubakavgac-.github.io/
 
 ## Updating content
 
-Edit `index.html` to change the experience, featured projects, publications, or speaking engagements. Use only public and verifiable professional information. Avoid adding internal company architecture, secrets, confidential threat intelligence, or credentials.
+Edit `index.html` to change the experience, featured projects, publications, or speaking engagements. When adding new text, add its Turkish equivalent to the `translations` dictionary in `i18n.js`. The English page is the source language. Use only public and verifiable professional information. Avoid adding internal company architecture, secrets, confidential threat intelligence, or credentials.
 
 ## Public profiles
 
