@@ -7,7 +7,7 @@ A professional, responsive portfolio and résumé website showcasing Tuba Kavgac
 ## Sections
 
 - Introduction and professional profile
-- Professional cybersecurity experience, earlier internships at Siirt University and Eria Teknoloji, and education (Digital Forensics Engineering graduate; Business Management at Atatürk University, currently in progress)
+- Professional cybersecurity experience, earlier internships at GAIS Cyber Security and DSET, and education (Digital Forensics Engineering graduate; Business Management at Atatürk University, currently in progress)
 - Selected public projects
 - Vulnerability research and CVE proof-of-concepts
 - Publications and technical writing
@@ -19,7 +19,7 @@ A professional, responsive portfolio and résumé website showcasing Tuba Kavgac
 - Clean dark-navy visual identity with accessible contrast
 - Responsive layout and mobile navigation
 - Turkish/English language switcher (TR / EN), with automatic browser-language detection and saved preference
-- Refined hero headline: *Investigating threats. Strengthening defenses.*
+- Bilingual hero headline: *They search for vulnerabilities. I investigate them.*
 - No JavaScript frameworks or build tools required
 - SEO metadata, Open Graph tags, and Person structured data
 - Reduced-motion and print styles for **Save as PDF**
